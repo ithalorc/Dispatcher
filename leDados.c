@@ -14,11 +14,13 @@ int main(){
 		return -1;
 	}
 	
+	// pega caracteres (0-9)
 	while ((chr = getc(fp)) != EOF){
 		if(chr != ',')
 			printf("%c",chr);
 	}
 
+	// Fecha arquivo
 	fclose(fp);
 	
 	return -1;
